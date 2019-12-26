@@ -15,9 +15,14 @@ class RafTest extends TestCase
         return $stack;
     }
 
+    /**
+     * 测试是否为数字
+     * @Author: Ferre
+     * @create: 2019/12/26 16:27
+     */
     public function testRead()
     {
-        $stack = [];
-        $this->assertEquals(0, count($stack));
+        $raf = new Raf();
+        $this->assertEquals(true, is_numeric($raf->read([1,2,3]))); //测试是否为数字
     }
 }
