@@ -1,12 +1,6 @@
 # PopularLibDemo
 some popular Lib Demo
 
-
-
-
-
-
-
 -   `composer global require phpunit/phpunit` 安装到全局
 	`composer require --dev phpunit/phpunit` 安装到本项目
 

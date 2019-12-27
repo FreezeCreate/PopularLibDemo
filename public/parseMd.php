@@ -5,12 +5,13 @@
  * Date: 2019/12/25
  * Time: 17:31
  */
-
+header("content-Type: text/html; charset=utf-8");
 require_once __DIR__.'/../vendor/autoload.php';
 
-$myFile = fopen("../README.md", "r") or die("Unable to open file!");
+$file_path = '../README.md';
+$myFile = fopen($file_path, "r") or die("Unable to open file!");
 $pd     = new Parsedown();
-$md_str = fread($myFile,filesize("../README.md"));
+$md_str = fread($myFile,filesize($file_path));
 echo $pd->text($md_str);    //读取md文件输出
 fclose($myFile);
 
