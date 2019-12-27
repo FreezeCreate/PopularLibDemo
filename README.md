@@ -13,6 +13,6 @@ some popular Lib Demo
 	
 	使用案例见[parseMd.php](./public/parseMd.php)
 
-- `composer require mobiledetect/mobiledetectlib` 检测移动设备类型
+- `composer require mobiledetect/mobiledetectlib` 检测移动设备类型/HEADER/手机OS版本等
 
 	使用案例见[mobileCheck.php](./public/mobileCheck.php)
