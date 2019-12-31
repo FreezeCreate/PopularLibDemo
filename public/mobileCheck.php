@@ -12,7 +12,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 $detect = new Mobile_Detect();
 if ($detect->isMobile()){
     echo '类型：手机<br>';
-    if( $detect->isAndroidOS() ){
+    if($detect->isAndroidOS()){
         echo 'OS：安卓<br>';
         echo '安卓版本：'.$detect->version('Android').'<br>';
         echo '浏览器等级：'.$detect->mobileGrade().'<br>';
